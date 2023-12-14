@@ -15,6 +15,10 @@ const Problem1 = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        if (item.name === '' || item.status === '') {
+            alert('Please enter a valid input!');
+            return;
+        }
         setData([...data, item]);
         setItem({name: '', status: ''});
     }
