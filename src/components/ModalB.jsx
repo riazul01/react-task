@@ -42,7 +42,7 @@ const ModalB = ({setShowModalB, handleShowModalA}) => {
             </div>
 
             {loader ? <p style={{fontSize: '1.2rem'}}>Please wait...</p> : 
-                (data && data.length === 0 ? <p>No items found!</p> : <div className="dataItems"><Table striped bordered hover size="sm">
+                (data && data.length === 0 ? <p style={{fontSize: '1.1rem'}}>No items found!</p> : <div className="dataItems"><Table striped bordered hover size="sm">
                     <thead>
                         <tr>
                             <th>id</th>

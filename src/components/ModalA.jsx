@@ -42,7 +42,7 @@ const ModalA = ({setShowModalA, handleShowModalB}) => {
             </div>
 
             {loader ? <p style={{fontSize: '1.2rem'}}>Please wait...</p> :
-                (data && data.length === 0 ? <p>No items found!</p> : <div className="dataItems"><Table striped bordered hover size="sm">
+                (data && data.length === 0 ? <p style={{fontSize: '1.1rem'}}>No items found!</p> : <div className="dataItems"><Table striped bordered hover size="sm">
                     <thead>
                         <tr>
                             <th>id</th>
@@ -62,7 +62,7 @@ const ModalA = ({setShowModalA, handleShowModalB}) => {
                 </Table>
             </div>)}
             
-            {data && <div className="checkboxInput">
+            {data && data.length !== 0 && <div className="checkboxInput">
                 <input checked={isChecked} onChange={handleCheckbox} type="checkbox" id="checkbox" style={{height: '1.1rem', width: '1.1rem'}} />
                 <label htmlFor="checkbox">Only Even</label>
             </div>}
