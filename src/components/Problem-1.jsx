@@ -55,7 +55,7 @@ const Problem1 = () => {
                     </ul>
 
                     <div className="tab-content"></div>
-                    
+
                     <table className="table table-striped ">
                         <thead>
                             <tr>
@@ -64,7 +64,7 @@ const Problem1 = () => {
                             </tr>
                         </thead>
                         <tbody>
-                            {data.filter((item) => item.status === show || show === 'all').sort((a, b) => (a.status.toLowerCase() === 'active') ? -1 : (a.status.toLowerCase() === 'completed') ? 1 : 0).map((item, index) => {
+                            {data.filter((item) => item.status === show || show === 'all').sort((a, b) => a.status.toLowerCase() === 'completed' ? -1 : 0).sort((a, b) => a.status.toLowerCase() === 'active' ? -1 : 0).map((item, index) => {
                                 return <tr key={index}>
                                     <td scope="col">{item.name}</td>
                                     <td scope="col">{item.status}</td>
