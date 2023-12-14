@@ -24,7 +24,6 @@ const Problem1 = () => {
     }
 
     return (
-
         <div className="container">
             <div className="row justify-content-center mt-5">
                 <h4 className='text-center text-uppercase mb-5'>Problem-1</h4>
@@ -41,6 +40,7 @@ const Problem1 = () => {
                         </div>
                     </form>
                 </div>
+
                 <div className="col-8">
                     <ul className="nav nav-pills mb-3" id="pills-tab" role="tablist">
                         <li className="nav-item">
@@ -53,7 +53,9 @@ const Problem1 = () => {
                             <button  className={`nav-link ${show==='completed' && 'active'}`} type="button" onClick={()=>handleClick('completed')}>Completed</button>
                         </li>
                     </ul>
+
                     <div className="tab-content"></div>
+                    
                     <table className="table table-striped ">
                         <thead>
                             <tr>

@@ -2,8 +2,8 @@ import React, { useContext, useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
 import Table from 'react-bootstrap/Table';
 import { useNavigate, useSearchParams } from 'react-router-dom';
-import '../assets/scss/components/modal.scss';
 import { ModalAContext } from '../context/ModalAContextProvider';
+import '../assets/scss/components/modal.scss';
 
 const ModalA = ({setShowModalA, handleShowModalB}) => {
     const [isChecked, setIsChecked] = useState(false);
