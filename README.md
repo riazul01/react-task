@@ -1,6 +1,8 @@
 # React Coding Test
 
-**Live Site -** [https://react-task-red.vercel.app/](https://react-task-red.vercel.app/)
+**Live Site -** [https://react-task-red.vercel.app/](https://react-task-red.vercel.app/)<br/>
+
+**Video Preview Link -** [https://youtu.be/hFVt8pMRlls](https://youtu.be/hFVt8pMRlls)
 
 # Preview
 
