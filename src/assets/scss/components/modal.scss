@@ -1,0 +1,70 @@
+.modalBox {
+    padding: 0.4rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+    background: #eee;
+    border-radius: 1rem;
+
+    .modalHeader {
+        margin: 2rem 0;
+
+        .btn1 {
+            color: #fff;
+            background: #46139f;
+        }
+
+        .btn2 {
+            color: #fff;
+            background: #ff7f50;
+        }
+
+        .btn3 {
+            color: #222;
+            background: #fff;
+            border: 1px solid #46139f;
+        }
+    }
+
+    .searchBox {
+        margin: 1rem 0;
+        display: flex;
+        align-items: center;
+
+        input {
+            height: 40px;
+            width: 240px;
+            padding: 0 0.6rem;
+        }
+
+        button {
+            margin-left: 0.4rem;
+            height: 40px;
+            width: 80px;
+            border: none;
+            outline: none;
+            color: #fff;
+            font-size: 1.1rem;
+            background: seagreen;
+            border-radius: 0.2rem;
+        }
+    }
+
+    .dataItems {
+        height: calc(100% - 14rem);
+        overflow: scroll;
+    }
+
+    .checkboxInput {
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+
+        label {
+            margin-left: 0.4rem;
+        }
+    }
+}
